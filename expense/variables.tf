@@ -1,3 +1,4 @@
+# ec2 variables
 variable "ami_id" {
     type = string
     default = "ami-09c813fb71547fc4f"
@@ -8,6 +9,7 @@ variable "instance_names" {
     default = ["db", "backend", "frontend"]
 }
 
+# sg variables
 variable "sg_name" {
     type = string
     default = "allow_ssh"
@@ -43,3 +45,12 @@ variable "common_tags" {
     }
 }
 
+#r53 variavles
+
+variable "zone_id" {
+    default = "Z06890531V7XSAXV1BRPS"
+}
+
+variable "domain_name" {
+    default = "devopswithmsvs.uno"
+}
